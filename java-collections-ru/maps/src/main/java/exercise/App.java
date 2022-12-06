@@ -10,6 +10,10 @@ public class App {
 
         Map<String, Integer> stringMap = new HashMap<>();
 
+        if (sentence.isEmpty()) {
+            return (stringMap);
+        }
+
         for (int i = 0; i < string.length; i++) {
             stringMap.put(string[i], 0);
         }
